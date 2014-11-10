@@ -11,6 +11,7 @@ namespace SitemapReader
     {
         public static void SerializeToXml<T>(T obj, string fileName)
         {
+            //Kim01
             XmlSerializer ser = new XmlSerializer(typeof(T));
             FileStream fileStream = new FileStream(fileName,
     FileMode.OpenOrCreate);
